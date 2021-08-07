@@ -1,0 +1,9 @@
+Pururin
+
+Done: get the EN title
+Done: get the JP title
+Done: get the cover image source
+Done: save the cover page
+Done: get the tags (inside Contents)
+
+Done: save titles, the cover page, and then the tags

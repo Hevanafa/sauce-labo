@@ -1,0 +1,20 @@
+﻿<Window x:Class="SauceLabo.Library"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SauceLabo"
+        mc:Ignorable="d"
+        Title="Library" Height="540.5" Width="491">
+    <Grid Background="#FF400000">
+        <TextBox x:Name="txbSearch" Height="25" Margin="10,10,215,0" TextWrapping="Wrap" VerticalAlignment="Top" TextChanged="TxbSearch_TextChanged" Background="Black" Foreground="White" VerticalContentAlignment="Center"/>
+        <ListBox x:Name="lbDoujin" Margin="10,40,215,10" SelectionChanged="LbDoujin_SelectionChanged" KeyDown="LbDoujin_KeyDown" Background="#FF200000" Foreground="White"/>
+        <Button x:Name="btnRefreshList" Content="Refresh List" HorizontalAlignment="Right" Height="25" Margin="0,10,130,0" VerticalAlignment="Top" Width="80" Click="BtnRefreshList_Click"/>
+        <TextBox x:Name="txbInformation" HorizontalAlignment="Right" Margin="0,279.5,10,10" TextWrapping="Wrap" Width="200" Background="Black" Foreground="White"/>
+        <Grid HorizontalAlignment="Right" Margin="0,40,10,0" Width="200" Background="#FF404040" Height="200" VerticalAlignment="Top" d:LayoutOverrides="Height">
+            <Image x:Name="imgCover" Margin="10" MouseLeftButtonDown="ImgCover_MouseLeftButtonDown"/>
+        </Grid>
+        <Label x:Name="label" Content="(Double click to see bigger image)" HorizontalAlignment="Right" Margin="0,245,10,235" Width="200" HorizontalContentAlignment="Center" Foreground="White" VerticalContentAlignment="Center"/>
+
+    </Grid>
+</Window>
